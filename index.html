@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Selectors</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main_div{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #CDE8E5;
+      color: #fff;
+    }
+    ul li{
+      font-size: 36px;
+
+    }
+    .content *{
+      padding-top: 8px;
+
+    }
+
+
+    ul li:nth-child(2n){
+      color: #FF0080;
+    }
+    ul li:nth-child(2n+1){
+      color: #0A6847;
+    }
+    ul li:first-child{
+      color: #FF5F00;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="main_div">
+    <div class="content">
+      <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+        <li>eleven</li>
+        <li>twelve</li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>
